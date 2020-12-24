@@ -1,0 +1,166 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  color: #1a202c;
+  -webkit-transition: color 0.2s ease-in;
+  transition: color 0.2s ease-in;
+}
+
+#app {
+  height: 100vh;
+  width: 100%;
+}
+
+main {
+  background-color: #f7fafc;
+  height: 100%;
+  width: 100%;
+  padding: 20px;
+  -webkit-transition: background-color 0.2s ease-in;
+  transition: background-color 0.2s ease-in;
+}
+
+.togglePlacement {
+    padding-left: 10px;
+}
+
+
+#toggle {
+  width: 50px;
+  display: -webkit-box;
+  display: flex;
+  padding: 5px;
+  background-color: #1a202c;
+  display: block;
+  border-radius: 1000px;
+  cursor: pointer;
+  box-shadow: 0px 5px 20px -10px #000000;
+  -webkit-transition: background-color 0.2s ease-in;
+  transition: background-color 0.2s ease-in;
+}
+#toggle .toggle-inner {
+  width: 20px;
+  height: 15px;
+  background-color: white;
+  border-radius: 1000px;
+  -webkit-transition: margin-left 0.2s ease-in, background-color 0.2s ease-in;
+  transition: margin-left 0.2s ease-in, background-color 0.2s ease-in;
+}
+#toggle .toggle-inner.toggle-active {
+  margin-left: 20px;
+}
+
+#container {
+  display: -webkit-box;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+}
+#container h1 {
+  padding: 0;
+  margin: 0 0 10px 0;
+}
+#container p {
+  opacity: .8;
+}
+
+.dark-mode {
+  color: black;
+}
+.dark-mode main {
+  background-color: #1a202c;
+}
+.dark-mode #toggle {
+  background-color: white;
+}
+.dark-mode #toggle .toggle-inner {
+  background-color: #1a202c;
+}
+.dark-mode .app {
+    background-color: white;
+  }
+.dark-mode .app__body {
+  background-color: #ededed;
+}
+.dark-mode .chat__body {
+  background-image: url(https://cutewallpaper.org/21/whatsapp-background-wallpaper/Whatsapp-Background-Polandballart.png);
+}
+.dark-mode .chat__name {
+  color: black;
+}
+.dark-mode .chat__message {
+  background-color:white;
+}
+.dark-mode .chat__reciever {
+  background-color:#dcf8c6 !important;
+  color: black;
+}
+.dark-mode .sidebar__chats {
+  background-color: white;
+  color: black;
+}
+.dark-mode .sidebarChat__info > h2 {
+  color: black;
+}
+.dark-mode .sidebarChat__info > p {
+  color: black;
+}
+.dark-mode .sidebar__headerRight > .MuiIconButton-root {
+  color: #919191;
+}
+.dark-mode .chat__headerInfo > h3 {
+  color: black;
+}
+
+.dark-mode .chat__headerInfo > p {
+  color: #919191;
+}
+.dark-mode .chat__headerRight .MuiSvgIcon-root {
+  fill: #919191;
+}
+.dark-mode .sidebar__search {
+  background-color: #f6f6f6;
+}
+.dark-mode .sidebar__searchContainer {
+  background-color: white;
+}
+.dark-mode .sidebar__searchContainer > input {
+  background-color: white;
+}
+.dark-mode .sidebarChat:hover {
+  background-color: #ededed;
+  color: #919191;
+}
+.dark-mode .sidebar__header {
+  border-right: none;
+}
+.dark-mode .chat__header {
+  border-bottom: none;
+}
+.dark-mode .chat__footer > form > input {
+  background-color: white;
+}
+.dark-mode .sidebar__searchContainer > input {
+    color:black
+}
+.dark-mode  .chat__footer > form > input {
+    color:black
+}
+.dark-mode  .sidebar__chats::-webkit-scrollbar-thumb {
+    background: #ededed;
+}
+.dark-mode  .chat__body::-webkit-scrollbar-thumb {
+    background: #ededed;
+}
